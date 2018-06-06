@@ -59,3 +59,34 @@ class CountingParent extends React.Component {
 ```
 
 
+
+as a general rule, data that is stored in state should be referenced inside -render- somewhere
+component stat is for storing UI state
+(things that affect the visual rendering of the page)
+this makes sense bc any time state is update, the component will re-render
+
+if modifying a peice of data doesnt visually change the componenet, the data shouldn't go into state
+
+
+
+### DO put in state (examples)
+- user entered input (text boxes and form fields)
+- current or selected item (current tab or selected row)
+- data from server (list of products or number of likes)
+- open/closed state (open modal or sidebar expanded or hidden)
+
+other stateful data, like handles to timers, should be stored on the component instance itself
+feel free to use the .this object available in the class component
+
+###Should Props go into State?
+avoid it
+componenets will automatically re-render when their props change, so theres no need to duplicate the props as a state
+
+
+
+
+
+
+ 
+
+
