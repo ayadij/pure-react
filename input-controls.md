@@ -30,12 +30,15 @@ class Example extends React.Component {
 try changing this.setState to ignore all event data
 instead always setting the text the the same value,
 
-
+### controlled input
+- accepts its current value as a prop, as well as a callback to change that value
+- changes states
 
 
 ### uncontrolled inputs
-
-when an input is uncontrolled, it manages its own internal state
+- not as powerful 
+- when an input is uncontrolled, it manages its own internal state
+- remembers what you typed in a form.. you have to pull the value from the field when you need it. 
 
 #### ref
 the ref prop is a special one
@@ -44,4 +47,8 @@ the ref gives you access to the inputs underyling DOM node so you can pull out i
 refs can only  be used on regular elements (div, input, etc) and stateful (class) components.
 No way to refer stateless components bc they dont have backing instance
 cannot attach a ref prop to a stateless component
+
+
+the goal is a "single source of truth"
+
 
