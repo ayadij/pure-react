@@ -82,6 +82,9 @@ feel free to use the .this object available in the class component
 avoid it
 componenets will automatically re-render when their props change, so theres no need to duplicate the props as a state
 
+** whenever you can, it is best to keep components stateless.
+componeents without state are easier to werite and reason
+
 
 
 
