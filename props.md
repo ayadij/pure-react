@@ -8,7 +8,8 @@
   - In React, data flows one way. Props are read-only, and can only be passed down to children.
 - destructure props { name }
 - onAction prop is called whenever it needs to send up data or notify the parent that something happened
-- 
+- props are evaluated before they are passed down
+
 
 
 
