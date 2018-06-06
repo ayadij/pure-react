@@ -1,0 +1,26 @@
+Arguments: 
+  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js start
+
+PATH: 
+  /Users/mymac/.rvm/gems/ruby-2.4.0/bin:/Users/mymac/.rvm/gems/ruby-2.4.0@global/bin:/Users/mymac/.rvm/rubies/ruby-2.4.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mymac/.rvm/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, scandir '/Users/mymac/.config/yarn/link'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
