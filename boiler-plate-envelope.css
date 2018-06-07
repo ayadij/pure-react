@@ -1,0 +1,40 @@
+
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.envelope {
+    position: relative;
+    border: 1px solid #ccc;
+    width: 700px;
+    height: 350px;
+}
+
+.stamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    height: 80px;
+    border: 1px solid #999;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #777;
+}
+
+.to {
+    position: absolute;
+    left: 280px;
+    top: 150px;
+}
+
+.from {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
