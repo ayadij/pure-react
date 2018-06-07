@@ -9,6 +9,7 @@
 - destructure props { name }
 - onAction prop is called whenever it needs to send up data or notify the parent that something happened
 - props are evaluated before they are passed down
+- the key prop is required any time you render an array of elements 
 
 
 
