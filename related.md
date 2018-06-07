@@ -24,6 +24,3 @@ TIPS:
 - structure
 
 
-
-import React from 'react';
-import 
