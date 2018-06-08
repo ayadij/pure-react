@@ -15,12 +15,13 @@
 - makes use of components to lay out the routing of your application, effectively mapping your components to URLs
 - not related or dependant on Redux
 
-## Mobx
+## MobX
 
 ## Redux
 
 TIPS:
 - build projects brick by brick
+-boilerplate projects
 - structure
 
 
