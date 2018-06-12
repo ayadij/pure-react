@@ -10,6 +10,7 @@
 
 ## ES6
 - ex: arrow functions, let/const, classes, destructuring, import/export
+- ES2016
  
 ## React Router
 - makes use of components to lay out the routing of your application, effectively mapping your components to URLs
