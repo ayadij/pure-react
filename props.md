@@ -9,9 +9,14 @@
 - destructure props { name }
 - onAction prop is called whenever it needs to send up data or notify the parent that something happened
 - props are evaluated before they are passed down
+
+
+
 - the key prop is required any time you render an array of elements 
-
-
+- a component can pass information to another component. Information that gets passed from one component to another is known as "props."
+- Every component has something called props.
+- A component's props is an object. It holds information about that component.
+- To see a component's props object, you use the expression this.props. 
 
 
 
