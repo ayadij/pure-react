@@ -102,5 +102,110 @@ There are two ways for a component to get dynamic information: props and state. 
 You just spent a long lesson learning about props. Now it's time to learn about state. props and state are all that you need to set up an ecosystem of interacting React components.
 
  
+-----
+
+
+
+
+Props and State are related
+
+the sate of one component will often become the props of a child component.
+props are passed tothe child within the render method of the parent as the second argument to React.createElement() or, if you're using JSX, the more famiiar tag attributes
+`MyChild name={this.state.childsName}`
+
+the parent's state value of childsName become the child's `this.props.name`. 
+From the child's perspective, the `name` prop is immutable. 
+if it needs to be changed, the parent should just change it's internal state:
+`this.setState({ childsName: 'New name' });`
+and React will propagate it to the child.
+A natural follow-up question is: what if the child needs to change its `name` prop?
+This is usually done through child events and parent callbacks. 
+The child might expose an event called, for example, onNameChanged.
+The parent would then subscribe to the event by passing a callback handler.
+<MyChild name ={this.state.childsName} onNameChanged={this.handleName} />
+The child would pass its requested new name as an argument to the event callback by calling
+`this.props.onNameChanged('New name')`
+and the parent would use the name in the event handler to update it's state.
+```
+handleName: function(newName) {
+  this.setState({ childsName: newName });
+}```
+ 
+
+codepen.io/kang/pen/Pqxyqr
+https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react
+https://github.com/uberVU/react-guide/blob/master/props-vs-state.md
+
+
+-------
+
+
+
+for parent-child communicaiton, simply pass props
+
+use STATE to store the data your current page needs in your controller-view
+
+use PROPS to pass data & event handlers down to your child components.
+
+most of your components should simply take some data from props and render it. 
+
+
+
+STATE
+- should be managed in your top level component
+- is mutable
+- has worse performance
+- should not be accessed from child componentes
+  - pass down props instead
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

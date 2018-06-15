@@ -30,3 +30,13 @@ const Hello = (props) => {
   );
 }
 ```
+
+
+- props are immutable
+  - which lets React do fast reference checks
+- props are used to pass down data from your view-controller
+  - your top level component
+- props have better perormance
+  - use this to pass data to child components
+
+  
